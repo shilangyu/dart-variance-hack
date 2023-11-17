@@ -19,7 +19,7 @@ List<Object> newList = list; // ok because int <: Object so therefore List<int> 
 newList.add('oops'); // runtime error
 ```
 
-Languages that allow to control variance typically have a mutable and immutable kind of a list with an invariant and covariant type argument respectively. In Dart there is no such thing, so nothing prevents us from these runtime errors. See [subtyping_test.dart](test/subtyping_test.dart) and [variance_test.dart](test/variance_test.dart).
+Languages that allow to control variance typically have a mutable and immutable kind of a list with an invariant and covariant type argument respectively. In Dart there is no such thing, so nothing prevents us from these runtime errors. See [subtyping_test.dart](test/subtyping_test.dart) and [variance_test.dart](test/variance_test.dart) for an introduction to subtyping and variance in Dart.
 
 A popular example where lack of contravariance is detrimental is a consumer class:
 
